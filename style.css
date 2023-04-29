@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Roboto+Condensed:ital,wght@0,300;1,400&display=swap');
+@import "reset.css";
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/sea.jpeg");
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns:repeat(4,1fr);
+    color : white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.hidden{
+    display: none;
+}
+.weather_box{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin : 10px;
+}
+.weather_box div{
+    margin-top:7px;
+}
+.clock_box{
+    grid-column: 2/4;
+    grid-row: 2/4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 250px;
+    font-style: italic;
+    text-shadow: 2px 2px 2px gray; 
+}
+.login_box{
+    grid-column: 2/4;
+    grid-row: 5/6;
+}
+.todo_form{
+    grid-column: -2/-1;
+    grid-row: 1/2;
+    display: flex;
+    align-items: flex-end;
+}
+.todo_form input{
+    width: 100%;
+    height: 50%;
+    background: none;
+    border:none;
+    outline: none;
+    font-size: 30px;
+    margin-left: 100px;
+}
+.todo_list{
+    grid-column : -2/-1;
+    grid-row: 2/-2;
+    opacity:0.3;
+    margin : 0px 100px 60px 100px;
+    border-radius: 15px;
+    opacity: 1.0;
+    padding : 20px;
+}
+.todo_list li{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid black;
+    margin-bottom : 5px;
+    padding:5px 0px;
+}
+.todo_list span{
+    color:black;
+}
+.todo_list button{
+    transition: 0.25s;
+    background:none;
+    border:none;
+}
+.todo_list button:hover{
+    letter-spacing: 2px;
+    transform: scale(2);
+    cursor: pointer;
+}
+.quote_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-column:2/4;
+    grid-row: 4/5;
+    font-size:25px;
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    text-shadow: 2px 2px 2px gray; 
+}
+.quote_box span{
+    text-align: center;
+    margin : 10px;
+}
